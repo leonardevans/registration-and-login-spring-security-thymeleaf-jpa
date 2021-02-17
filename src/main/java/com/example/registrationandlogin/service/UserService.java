@@ -1,0 +1,8 @@
+package com.example.registrationandlogin.service;
+
+import com.example.registrationandlogin.web.dto.UserRegistrationDto;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+public interface UserService extends UserDetailsService {
+    void save(UserRegistrationDto userRegistrationDto);
+}
